@@ -4,7 +4,7 @@
 #include"Equipe.h"
 
 
-/* Affichage des donnés d'une équipe dont le pointeur est passé en paramètre
+/* Affiche les donnés d'une équipe dont le pointeur est passé en paramètre
    sous la forme "Racing 15 pts (G: N: P: B:)" */
 void affiche_equipe(const Equipe *eq){
 	printf("%s %d pts (V: %d N: %d D: %d B: %d)\n",eq->nom,eq->nb_points,eq->nb_victoires,eq->nb_nuls,eq->nb_defaites,eq->nb_bonus);
@@ -77,7 +77,7 @@ void trier_equipes(Equipe Teq[], int n){
 			else if(Teq[j].nb_points==Teq[indmax].nb_points){
 				if(Teq[j].nb_victoires>Teq[indmax].nb_victoires){
 					indmax=j;
-					/* En cas d'égalité de victoire, l'équipe ayant le moins de defaites    est prioritaire.*/
+				}
 				else if(Teq[j].nb_victoires==Teq[indmax].nb_victoires){
 					if(Teq[j].nb_defaites<Teq[indmax].nb_defaites){
 						indmax=j;
