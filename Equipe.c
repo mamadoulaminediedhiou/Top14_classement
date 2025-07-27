@@ -78,6 +78,7 @@ void trier_equipes(Equipe Teq[], int n){
 				if(Teq[j].nb_victoires>Teq[indmax].nb_victoires){
 					indmax=j;
 				}
+				
 				else if(Teq[j].nb_victoires==Teq[indmax].nb_victoires){
 					if(Teq[j].nb_defaites<Teq[indmax].nb_defaites){
 						indmax=j;
